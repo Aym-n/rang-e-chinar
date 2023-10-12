@@ -1,6 +1,5 @@
 history.scrollRestoration = 'manual';
 $(document).ready(function() {
-    setTimeout(function() {
     $(".loader").attr('transition-style', 'out:circle:hesitate');
 
       // Set a timeout to hide the element
@@ -11,8 +10,6 @@ $(document).ready(function() {
       $(".text").addClass("animate__fadeInDown");
       $(".coming_soon").addClass("animate__fadeInUp");
       $(".countdown").addClass("animate__fadeInUp");
-      
-    },2500);
 
 
     
