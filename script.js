@@ -8,7 +8,7 @@ $(document).ready(function() {
         $(".loader").hide();
       }, 2500);
 
-      $(".text").addClass("animate__fadeInUp");
+      $(".text").addClass("animate__fadeInDown");
       $(".coming_soon").addClass("animate__fadeInUp");
       $(".countdown").addClass("animate__fadeInUp");
       
