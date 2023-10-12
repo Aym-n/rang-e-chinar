@@ -30,10 +30,12 @@ $(document).ready(function() {
         let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
         $('#days').text((String(days).padStart(2, '0'))+" : ");
         $('#hours').text((String(hours).padStart(2, '0'))+" : ");
-        $('#minutes').text((String(minutes).padStart(2, '0')));
+        $('#minutes').text((String(minutes).padStart(2, '0'))+" : ");
+        $('#seconds').text(String(seconds).padStart(2, '0'));
     }
 
     updateTimer();
