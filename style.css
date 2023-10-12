@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'brittani';
+        src: url('./assets/BrittanySignature-LjyZ.otf') format('opentype');
+}
+@font-face {
+    font-family: 'cinzel';
+        src: url('./assets/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cinzel-deco';
+        src: url('./assets/CinzelDecorative-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f1606;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.pattern{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.04;
+    position: fixed;
+    background-repeat:repeat;
+    background-image: url('./assets/pattern.svg');
+    background-size: 250px;
+    z-index: 2;
+}
+
+.wrapper{
+    display: flex;
+    z-index: -1;
+    position: absolute;
+}
+
+/* main styles */
+.main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    min-width: 60%;
+}
+
+.main > *{
+    margin-bottom: 10px;
+}
+
+.design{
+    background-image: url('./assets/nit_logo.png');
+    background-size: 80px;
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+}
+
+.logo{
+    width: 200px;
+    animation: rotate360 80s linear infinite;
+}
+
+.text p{
+    font-family: 'cinzel', serif;
+    text-transform: uppercase;
+    color: #C8A25D;
+    font-size: 3rem;
+}
+
+.coming_soon{
+    color: white;
+    font-family: 'brittani';
+    font-size: 4rem;
+}
+
+.countdown{
+    font-size: 9rem;
+    color: white;
+    display: flex;
+    font-family: 'cinzel';
+}
+
+.timer p{
+    font-size: 8rem;
+}
+
+.timer h2{
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'cinzel';
+    font-weight: 400;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* side designs */
+
+.side_design{
+    width: 30%;
+}
+
+.side_design img{
+    width: 95%;
+    opacity: 0.5;
+    }
+
+.left{
+    position: relative;
+    bottom: -80%;
+    left: -32%;
+}
+
+
+.right
+{
+    position: relative;
+    left: 40%;
+    top: -15%;
+}
+
+
+@media screen and (max-width:600px) {
+    .side_design{
+        display: none;
+    }
+    .timer p{
+        font-size: 3.8rem;
+    }
+    .timer h2{
+        font-size: 0.7rem;
+    }
+    .main{
+        min-width: 100%;
+        gap: 15px;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .text p{
+        font-size: 2.5rem;
+    }
+    .coming_soon{
+        font-size: 3rem;
+    }
+    .text img{
+        width: 75%;
+    }
+    .logo{
+        width: 250px;
+    }
+    .design{
+        background-size: 110px;
+    }
+   .loader img{
+        width: 75% !important;
+        top: calc(50% - 37.5vw) !important;
+        left: 12.5% !important;
+   } 
+}
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate{
+    animation: rotate360 60s ease-in-out infinite;
+}
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #ebe3d6;
+}
+
+.loader div{
+    width: 100%;
+    height: 15%;
+    background-color: #1f1606;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a2834b;
+    font-family: 'cinzel';
+    z-index: 5;
+}
+
+.loader img{
+    width: 25%;
+    z-index: 1;
+    position: absolute;
+    top: calc(50% - 12.5vw);
+    left: 37.5%;
+    animation: rotate360 20s linear infinite;
+}

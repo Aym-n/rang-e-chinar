@@ -3,13 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultural Fest</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <title>Cultural Fest - NIT Srinagar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+</head> 
 <body>
+    <div class="loader">
+        <img src="./assets/Luxury Mandala Design.svg" alt="">
+        <div class="banner">
+            <h1 class="animate__animated animate__slideInDown">Rang-e-Chinar</h1>
+        </div>
+    </div>
+    <div class="pattern"></div>
+    <div class="wrapper">
+        <div class="side_design respo_left">
+            <img class="left rotate" src="./assets/Mandala Flower Illustration.svg" alt="">
+        </div>
+        <div class="main">
 
+            <div id="design" class="design animate__animated animate__bounce">
+                <img src="./assets/logo_design.svg" class="logo">
+            </div>
+
+            <div id="text" class="text animate__animated animate__delay-1s">
+                <p>Rang-e-Chinar</p>
+                <img src="./assets/Vintage Decorative Line Art.svg" alt="">
+            </div>
+
+            <div id="coming_soon" class="coming_soon animate__animated animate__delay-1s animate__slow">
+                <p>Coming Soon</p>
+            </div>
+
+            <div id="countdown" class="countdown animate__animated animate__delay-2s">
+                <div class="timer"><p class="time" id="days">21 : </p><h2>days</h2></div>
+                <div class="timer"><p class="time" id="hours">13 :</p><h2>hours</h2></div>
+                <div class="timer"><p class="time" id="minutes">45</p><h2>mins</h2></div>
+            </div>
+
+        </div>
+        <div class="side_design">
+            <img class="right respo rotate" src="./assets/Luxury Mandala Design.svg" alt="">
+        </div>
+    </div>
+
+
+    <script src="./jquery.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
