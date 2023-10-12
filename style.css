@@ -203,8 +203,12 @@ body{
     align-items: center;
     justify-content: center;
     color: #a2834b;
-    font-family: 'cinzel';
     z-index: 5;
+}
+
+.loader > div > h1{
+    font-family: 'cinzel';
+    font-weight: 500 !important;
 }
 
 .loader img{
