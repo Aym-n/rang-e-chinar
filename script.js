@@ -23,7 +23,7 @@ $(document).ready(function() {
 
         if (timeDifference <= 0) {
             clearInterval(interval);
-            $('#timer').html('<span>00</span>:<span>00</span>:<span>00</span>');
+            $('#timer').html('<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>');
             return;
         }
 
